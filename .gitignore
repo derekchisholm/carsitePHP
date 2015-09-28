@@ -7,7 +7,9 @@ nbproject
 .idea
 .project
 .settings
+.old
 vendor
+logs
 composer.phar
 config/development.config.php
 config/autoload/local.php
