@@ -9,6 +9,10 @@
     "homepage": "http://framework.zend.com/",
     "require": {
         "php": ">=5.5",
-        "zendframework/zendframework": "~2.5"
+        "zendframework/zendframework": "~2.5",
+        "zfcampus/zf-apigility": "~1.0",
+        "zfcampus/zf-apigility-admin": "~1.0",
+        "zfcampus/zf-configuration": "~1.0",
+        "zfcampus/zf-development-mode": "~2.0"
     }
 }
