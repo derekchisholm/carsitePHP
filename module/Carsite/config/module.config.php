@@ -124,8 +124,8 @@ return array(
                     0 => array(
                         'name' => 'Zend\\Validator\\Between',
                         'options' => array(
-                            'max' => '999',
                             'min' => '0.001',
+                            'max' => '999.999',
                         ),
                     ),
                 ),
@@ -289,5 +289,8 @@ return array(
         'factories' => array(
             'Carsite\\V1\\Rest\\Fillups\\FillupsResource' => 'Carsite\\V1\\Rest\\Fillups\\FillupsResourceFactory',
         ),
+    ),
+    'view_manager' => array(
+        'display_exceptions' => true,
     ),
 );

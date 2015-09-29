@@ -5,6 +5,7 @@ class FillupsResourceFactory
 {
     public function __invoke($services)
     {
-        return new FillupsResource();
+        $mapper = $services->get('Carsite\V1\Rest\Fillups\FillupsMapper');
+        return new FillupsResource($mapper);
     }
 }
