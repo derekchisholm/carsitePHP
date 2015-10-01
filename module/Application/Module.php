@@ -5,12 +5,15 @@
  * @link      http://github.com/zendframework/ZendSkeletonApplication for the canonical source repository
  * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
+ * 
+ * Zend\Uri\UriFactory and UriFactory method should not be in production!!
  */
 
 namespace Application;
 
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
+use Zend\Uri\UriFactory;
 
 class Module
 {
@@ -19,6 +22,7 @@ class Module
         $eventManager        = $e->getApplication()->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
+        UriFactory::registerScheme('chrome-extension', 'Zend\Uri\Uri');
     }
 
     public function getConfig()

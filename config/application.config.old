@@ -22,7 +22,6 @@ return array(
         'ZF\\Versioning',
         'ZF\\DevelopmentMode',
         'ZfrCors',
-        'Carsite',
     ),
     'module_listener_options' => array(
         'module_paths' => array(

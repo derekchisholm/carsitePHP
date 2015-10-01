@@ -10,7 +10,10 @@ return array(
          /**
           * Set the list of allowed origins domain with protocol.
           */
-         'allowed_origins' => array('http://localhost:9000'),
+         'allowed_origins' => array(
+             'http://localhost:9000',
+             'chrome-extension://*'
+             ),
 
          /**
           * Set the list of HTTP verbs.
