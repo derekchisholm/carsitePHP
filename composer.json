@@ -12,6 +12,7 @@
         "zendframework/zendframework": "~2.5",
         "zfcampus/zf-apigility": "~1.0",
         "zfcampus/zf-apigility-admin": "~1.0",
+        "zfcampus/zf-apigility-admin-ui": "dev-master",
         "zfcampus/zf-configuration": "~1.0",
         "zfcampus/zf-apigility-documentation": "~1.0",
         "zfcampus/zf-development-mode": "~2.0",
