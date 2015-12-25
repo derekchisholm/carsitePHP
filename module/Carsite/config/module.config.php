@@ -116,7 +116,9 @@ return array(
                 0 => 'GET',
                 1 => 'POST',
             ),
-            'collection_query_whitelist' => array(),
+            'collection_query_whitelist' => array(
+                0 => 'vehicle_id',
+            ),
             'page_size' => 25,
             'page_size_param' => null,
             'entity_class' => 'Carsite\\V1\\Rest\\Service\\ServiceEntity',
