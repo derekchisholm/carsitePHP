@@ -509,15 +509,19 @@ return array(
             ),
             3 => array(
                 'name' => 'partial',
-                'required' => true,
+                'required' => false,
                 'filters' => array(),
                 'validators' => array(),
+                'continue_if_empty' => true,
+                'allow_empty' => true,
             ),
             4 => array(
                 'name' => 'missed',
-                'required' => true,
+                'required' => false,
                 'filters' => array(),
                 'validators' => array(),
+                'allow_empty' => true,
+                'continue_if_empty' => true,
             ),
             5 => array(
                 'name' => 'vehicle',
@@ -671,6 +675,12 @@ return array(
                         ),
                     ),
                 ),
+            ),
+            13 => array(
+                'required' => true,
+                'validators' => array(),
+                'filters' => array(),
+                'name' => 'cost',
             ),
         ),
         'Carsite\\V1\\Rest\\Service\\Validator' => array(
