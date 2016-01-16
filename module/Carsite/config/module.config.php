@@ -116,7 +116,9 @@ return array(
                 0 => 'GET',
                 1 => 'POST',
             ),
-            'collection_query_whitelist' => array(),
+            'collection_query_whitelist' => array(
+                0 => 'vehicle_id',
+            ),
             'page_size' => 25,
             'page_size_param' => null,
             'entity_class' => 'Carsite\\V1\\Rest\\Service\\ServiceEntity',
@@ -507,15 +509,19 @@ return array(
             ),
             3 => array(
                 'name' => 'partial',
-                'required' => true,
+                'required' => false,
                 'filters' => array(),
                 'validators' => array(),
+                'continue_if_empty' => true,
+                'allow_empty' => true,
             ),
             4 => array(
                 'name' => 'missed',
-                'required' => true,
+                'required' => false,
                 'filters' => array(),
                 'validators' => array(),
+                'allow_empty' => true,
+                'continue_if_empty' => true,
             ),
             5 => array(
                 'name' => 'vehicle',
@@ -669,6 +675,12 @@ return array(
                         ),
                     ),
                 ),
+            ),
+            13 => array(
+                'required' => true,
+                'validators' => array(),
+                'filters' => array(),
+                'name' => 'cost',
             ),
         ),
         'Carsite\\V1\\Rest\\Service\\Validator' => array(
